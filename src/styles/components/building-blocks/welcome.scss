@@ -1,11 +1,11 @@
 .mv-welcome {
-  margin-top: 60px !important;
+  margin-top: 100px !important;
   text-align: center;
 
   .welcome { font-size: 28px; }
 
   .covid-free {
-    padding-top: 10px;
+    padding-top: 20px;
     color: $accent;
     font-size: 20px;
   }
@@ -13,7 +13,7 @@
   .separator {
     margin: 30px auto;
     width: 50%; height: 1px;
-    background: $dark-grey;
+    background: $main;
   }
 
   .house-container {
@@ -25,8 +25,8 @@
   }
 
   .punch-line {
-    padding-top: 36px;
-    font-size: 14px;
+    padding-top: 24px;
+    font-size: 16px;
     font-style: italic;
   }
 }

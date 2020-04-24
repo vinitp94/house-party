@@ -3,15 +3,14 @@
   justify-content: center;
   align-items: center;
   right: 0; bottom: 0; left: 0;
-  height: 40px;
+  height: 60px;
   min-width: 800px;
   background: $darkest-grey;
-  border-top: 1px solid $medium-grey;
+  border-top: 1px solid $main;
 
   .label {
     color: white;
     background: $darkest-grey;
-    font-size: 10px;
   }
 }
 

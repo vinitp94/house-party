@@ -11,15 +11,15 @@ class Header extends React.Component {
         $('.' + item).removeClass('selected');
       });
 
-      if (scrollTop < 750) {
+      if (scrollTop < 1000) {
         $('.welcome').addClass('selected');
-      } else if (scrollTop < 1250) {
+      } else if (scrollTop < 1500) {
         $('.akash-room').addClass('selected');
-      } else if (scrollTop < 1750) {
+      } else if (scrollTop < 2000) {
         $('.patio').addClass('selected');
-      } else if (scrollTop < 2250) {
+      } else if (scrollTop < 2500) {
         $('.bathroom').addClass('selected');
-      } else if (scrollTop < 2750) {
+      } else if (scrollTop < 3000) {
         $('.bar').addClass('selected');
       } else {
         $('.dance-floor').addClass('selected');
@@ -28,7 +28,7 @@ class Header extends React.Component {
       if (scrollTop < 300) {
         let scalingFactor = scrollTop / 300;
 
-        $('.mv-header').height(80 - (40 * scalingFactor));
+        $('.mv-header').height(100 - (50 * scalingFactor));
         $('.header-logo').height(40 - (20 * scalingFactor));
       }
     });

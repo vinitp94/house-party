@@ -1,9 +1,9 @@
 .mv-header {
   position: fixed;
   top: 0; right: 0; left: 0;
-  height: 80px;
+  height: 100px;
   background: $darkest-grey;
-  border-bottom: 1px solid $medium-grey;
+  border-bottom: 1px solid $main;
   z-index: 100;
 
   .header-container {
@@ -24,12 +24,13 @@
 
       > * {
         background: $darkest-grey;
+        font-size: 16px;
       }
 
       .header-logo {
         width: auto;
-        height: 30px;
-        margin-right: 8px;
+        height: 40px;
+        margin-right: 12px;
       }
     }
 
@@ -41,7 +42,6 @@
         background: $darkest-grey;
         margin-left: 36px;
         padding: 3px 0;
-        font-size: 11px;
         cursor: pointer;
 
         &.selected { border-bottom: 1px solid $accent; }
