@@ -1,34 +1,32 @@
 .mv-welcome {
-  margin-top: 140px !important;
+  margin-top: 60px !important;
   text-align: center;
-  border-bottom: 1px solid $main;
 
   .welcome { font-size: 28px; }
 
-  .hand-car-wash {
+  .covid-free {
     padding-top: 10px;
     color: $accent;
     font-size: 20px;
   }
 
   .separator {
-    margin: 50px auto 0 auto;
+    margin: 30px auto;
     width: 50%; height: 1px;
-    background: $lighter-grey;
+    background: $dark-grey;
   }
 
-  .message {
-    padding-top: 60px;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 24px;
-    color: $medium-grey;
-    text-align: justify;
+  .house-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    > img { width: 100%; }
   }
 
   .punch-line {
     padding-top: 36px;
-    font-size: 17px;
+    font-size: 14px;
     font-style: italic;
   }
 }
@@ -36,7 +34,7 @@
 @media screen and (max-width: 600px) {
   .mv-welcome {
     margin-top: 30px !important;
-    border-bottom: 1px solid $lighter-grey;
+    border-bottom: 1px solid $lightest-grey;
 
     .welcome { font-size: 24px; }
     .hand-car-wash { font-size: 16px; }

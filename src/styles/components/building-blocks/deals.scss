@@ -36,7 +36,7 @@
     .feature {
       padding: 10px 20px;
       color: $medium-grey;
-      border-bottom: 1px solid $lighter-grey;
+      border-bottom: 1px solid $lightest-grey;
     }
 
     .price {
@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 600px) {
   .mv-deals {
-    border-bottom: 1px solid $lighter-grey;
+    border-bottom: 1px solid $lightest-grey;
 
     .header {
       margin-top: 50px;

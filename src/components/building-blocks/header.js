@@ -7,25 +7,29 @@ class Header extends React.Component {
     $(document).scroll(() => {
       let scrollTop = $(document).scrollTop();
 
-      if (scrollTop < 410) {
+      ['welcome', 'akash-room', 'patio', 'bathroom', 'bar', 'dance-floor'].forEach((item) => {
+        $('.' + item).removeClass('selected');
+      });
+
+      if (scrollTop < 750) {
         $('.welcome').addClass('selected');
-        $('.deals').removeClass('selected');
-        $('.contact').removeClass('selected');
-      } else if (scrollTop < 1740) {
-        $('.deals').addClass('selected');
-        $('.welcome').removeClass('selected');
-        $('.contact').removeClass('selected');
+      } else if (scrollTop < 1250) {
+        $('.akash-room').addClass('selected');
+      } else if (scrollTop < 1750) {
+        $('.patio').addClass('selected');
+      } else if (scrollTop < 2250) {
+        $('.bathroom').addClass('selected');
+      } else if (scrollTop < 2750) {
+        $('.bar').addClass('selected');
       } else {
-        $('.contact').addClass('selected');
-        $('.welcome').removeClass('selected');
-        $('.deals').removeClass('selected');
+        $('.dance-floor').addClass('selected');
       }
 
       if (scrollTop < 300) {
         let scalingFactor = scrollTop / 300;
 
-        $('.mv-header').height(140 - (70 * scalingFactor));
-        $('.header-logo').height(80 - (40 * scalingFactor));
+        $('.mv-header').height(80 - (40 * scalingFactor));
+        $('.header-logo').height(40 - (20 * scalingFactor));
       }
     });
   }
@@ -33,10 +37,8 @@ class Header extends React.Component {
   scrollToPosition(targetElement) {
     let positionToScroll = 0;
 
-    if (targetElement === 'deals') {
-      positionToScroll = $('.mv-deals').offset().top - 50;
-    } else if (targetElement === 'contact') {
-      positionToScroll = $(document).height();
+    if (targetElement !== 'mv-welcome') {
+      positionToScroll = $('.' + targetElement).offset().top - 70;
     }
 
     window.scroll({
@@ -50,12 +52,18 @@ class Header extends React.Component {
     return (
       <div className="mv-header">
         <div className="header-container">
-          <img className="header-logo" src="src/assets/icons/valero-logo.png" alt="Logo" />
+          <div className="left-content">
+            <img className="header-logo" src="src/assets/icons/stonks.png" alt="Logo" />
+            <div>BURTHDAY PARTI</div>
+          </div>
 
           <div className="nav">
-            <div className="welcome" onClick={ this.scrollToPosition.bind(this, 'welcome') }>Home</div>
-            <div className="deals" onClick={ this.scrollToPosition.bind(this, 'deals') }>Deals</div>
-            <div className="contact" onClick={ this.scrollToPosition.bind(this, 'contact') }>Contact</div>
+            <div className="welcome" onClick={ this.scrollToPosition.bind(this, 'mv-welcome') }>Home</div>
+            <div className="akash-room" onClick={ this.scrollToPosition.bind(this, 'mv-akash-room') }>Akash's Bedroom</div>
+            <div className="patio" onClick={ this.scrollToPosition.bind(this, 'mv-patio') }>Patio</div>
+            <div className="bathroom" onClick={ this.scrollToPosition.bind(this, 'mv-bathroom') }>Bathroom</div>
+            <div className="bar" onClick={ this.scrollToPosition.bind(this, 'mv-bar') }>Bar</div>
+            <div className="dance-floor" onClick={ this.scrollToPosition.bind(this, 'mv-dance-floor') }>Dance Floor</div>
           </div>
         </div>
       </div>

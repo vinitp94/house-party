@@ -1,12 +1,13 @@
 .mv-header {
   position: fixed;
   top: 0; right: 0; left: 0;
-  height: 140px;
-  background: rgba(240, 240, 240, 0.7);
+  height: 80px;
+  background: $darkest-grey;
   border-bottom: 1px solid $medium-grey;
   z-index: 100;
 
   .header-container {
+    background: $darkest-grey;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,18 +17,34 @@
     padding: 0 50px;
     box-sizing: border-box;
 
-    .header-logo { width: auto; height: 80px; }
+    .left-content {
+      align-items: center;
+      display: flex;
+      background: $darkest-grey;
+
+      > * {
+        background: $darkest-grey;
+      }
+
+      .header-logo {
+        width: auto;
+        height: 30px;
+        margin-right: 8px;
+      }
+    }
 
     .nav {
       display: flex;
+      background: $darkest-grey;
 
       > * {
+        background: $darkest-grey;
         margin-left: 36px;
-        padding: 5px 0;
-        font-size: 13px;
+        padding: 3px 0;
+        font-size: 11px;
         cursor: pointer;
 
-        &.selected { border-bottom: 2px solid $accent; }
+        &.selected { border-bottom: 1px solid $accent; }
       }
     }
   }
