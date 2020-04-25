@@ -7,7 +7,7 @@ export default function AkashRoom() {
         <img src="src/assets/images/bedroom.jpg" alt="Room" />
       </div>
       <div className="banner">
-        AKASH'S BEDROOM
+        AKASH'S BEDROOM - Seks?
       </div>
       <a target="_blank" href="https://www.google.com">
         <div className="action-btn">Enter</div>

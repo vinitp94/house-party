@@ -7,7 +7,7 @@ export default function Bathroom() {
         <img src="src/assets/images/bathroom.jpg" alt="Bathroom" />
       </div>
       <div className="banner">
-        BATHROOM
+        BATHROOM - Write him a message on the wall below!
       </div>
       <a target="_blank" href="https://www.google.com">
         <div className="action-btn">Enter</div>

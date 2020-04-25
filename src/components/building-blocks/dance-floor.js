@@ -7,7 +7,7 @@ export default function DanceFloor() {
         <img src="src/assets/images/club.jpg" alt="Club" />
       </div>
       <div className="banner">
-        DANCE FLOOR
+        DANCE FLOOR - Add some bangers to the playlist!
       </div>
       <a target="_blank" href="https://www.google.com">
         <div className="action-btn">Enter</div>

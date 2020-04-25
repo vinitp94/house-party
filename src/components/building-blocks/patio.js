@@ -7,7 +7,7 @@ export default function Patio() {
         <img src="src/assets/images/patio.jpg" alt="Patio" />
       </div>
       <div className="banner">
-        PATIO
+        PATIO - Talk shit.
       </div>
       <a target="_blank" href="https://www.google.com">
         <div className="action-btn">Enter</div>
