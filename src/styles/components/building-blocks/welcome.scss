@@ -1,4 +1,9 @@
 .mv-welcome {
+  min-width: 800px;
+  margin: auto;
+  padding: 70px 0;
+  box-sizing: border-box;
+  color: $dark-grey;
   margin-top: 100px !important;
   text-align: center;
 
@@ -17,22 +22,46 @@
   }
 
   .house-container {
+    padding: 0 200px;
     position: relative;
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 
     > img { width: 100%; }
   }
 
-  .punch-line {
-    padding-top: 24px;
-    font-size: 16px;
-    font-style: italic;
+  .header-carousel {
+    position: relative;
+    width: 100vw; height: 400px;
+    margin: auto;
+    overflow: hidden;
+
+    .carousel-img-container {
+      position: relative;
+      height: 400px;
+      width: 500px;
+
+      .carousel-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        width: auto;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
   .mv-welcome {
+    width: 100vw;
+    min-width: 0;
+    padding: 40px 25px;
     margin-top: 30px !important;
     border-bottom: 1px solid $lightest-grey;
 
@@ -45,10 +74,5 @@
     }
 
     .message { padding-top: 40px; }
-
-    .punch-line {
-      font-size: 14px;
-      line-height: 22px;
-    }
   }
 }
