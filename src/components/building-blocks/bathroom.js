@@ -12,7 +12,6 @@ export default function Bathroom() {
       <a target="_blank" href="https://www.google.com">
         <div className="action-btn">Enter</div>
       </a>
-
       <div className="iframe-container">
         <iframe width="100%" height="100%" src="https://awwapp.com/b/uda7nnewabdzl/"></iframe>
       </div>
