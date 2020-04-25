@@ -7,19 +7,21 @@ class Header extends React.Component {
     $(document).scroll(() => {
       let scrollTop = $(document).scrollTop();
 
-      ['welcome', 'akash-room', 'patio', 'bathroom', 'bar', 'dance-floor'].forEach((item) => {
+      ['welcome', 'akash-room', 'patio', 'game-room', 'bathroom', 'bar', 'dance-floor'].forEach((item) => {
         $('.' + item).removeClass('selected');
       });
 
       if (scrollTop < 1000) {
         $('.welcome').addClass('selected');
-      } else if (scrollTop < 1500) {
+      } else if (scrollTop < 1600) {
         $('.akash-room').addClass('selected');
-      } else if (scrollTop < 2000) {
+      } else if (scrollTop < 2200) {
         $('.patio').addClass('selected');
-      } else if (scrollTop < 2500) {
+      } else if (scrollTop < 2800) {
         $('.bathroom').addClass('selected');
-      } else if (scrollTop < 3000) {
+      } else if (scrollTop < 3400) {
+        $('.game-room').addClass('selected');
+      } else if (scrollTop < 4000) {
         $('.bar').addClass('selected');
       } else {
         $('.dance-floor').addClass('selected');
@@ -62,6 +64,7 @@ class Header extends React.Component {
             <div className="akash-room" onClick={ this.scrollToPosition.bind(this, 'mv-akash-room') }>Akash's Bedroom</div>
             <div className="patio" onClick={ this.scrollToPosition.bind(this, 'mv-patio') }>Patio</div>
             <div className="bathroom" onClick={ this.scrollToPosition.bind(this, 'mv-bathroom') }>Bathroom</div>
+            <div className="game-room" onClick={ this.scrollToPosition.bind(this, 'mv-game-room') }>Game Room</div>
             <div className="bar" onClick={ this.scrollToPosition.bind(this, 'mv-bar') }>Bar</div>
             <div className="dance-floor" onClick={ this.scrollToPosition.bind(this, 'mv-dance-floor') }>Dance Floor</div>
           </div>

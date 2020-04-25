@@ -10,7 +10,11 @@ export default function DanceFloor() {
         DANCE FLOOR
       </div>
       <a target="_blank" href="https://www.google.com">
-        <div className="action-btn">Join the Zoom</div>
+        <div className="action-btn">Enter</div>
+      </a>
+
+      <a target="_blank" href="https://open.spotify.com/playlist/5LFWI8SdtzlE9JDCWLbsDw?si=dihRkHznRg-ipiZC8UHB9A">
+        <div className="action-btn secondary">Add to Playlist</div>
       </a>
     </div>
   );

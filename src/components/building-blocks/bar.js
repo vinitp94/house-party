@@ -10,7 +10,10 @@ export default function Bar() {
         BAR
       </div>
       <a target="_blank" href="https://www.google.com">
-        <div className="action-btn">Join the Zoom</div>
+        <div className="action-btn">Enter</div>
+      </a>
+      <a target="_blank" href="https://makemeacocktail.com/mybar/">
+        <div className="action-btn secondary">Make a Drink</div>
       </a>
     </div>
   );

@@ -10,7 +10,7 @@ export default function AkashRoom() {
         AKASH'S BEDROOM
       </div>
       <a target="_blank" href="https://www.google.com">
-        <div className="action-btn">Join the Zoom</div>
+        <div className="action-btn">Enter</div>
       </a>
     </div>
   );

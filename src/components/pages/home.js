@@ -8,6 +8,7 @@ import AkashRoom from '../building-blocks/akash-room';
 import Bathroom from '../building-blocks/bathroom';
 import Bar from '../building-blocks/bar';
 import DanceFloor from '../building-blocks/dance-floor';
+import GameRoom from '../building-blocks/game-room';
 import Footer  from '../building-blocks/footer';
 
 class Home extends React.Component {
@@ -23,6 +24,7 @@ class Home extends React.Component {
         <AkashRoom></AkashRoom>
         <Patio></Patio>
         <Bathroom></Bathroom>
+        <GameRoom></GameRoom>
         <Bar></Bar>
         <DanceFloor></DanceFloor>
         <Footer></Footer>
