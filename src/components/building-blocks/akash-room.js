@@ -9,7 +9,7 @@ export default function AkashRoom() {
       <div className="banner">
         AKASH'S BEDROOM - Seks?
       </div>
-      <a target="_blank" href="https://www.google.com">
+      <a target="_blank" href="https://meet.jit.si/ProjectAkashBedroom">
         <div className="action-btn">Enter</div>
       </a>
     </div>

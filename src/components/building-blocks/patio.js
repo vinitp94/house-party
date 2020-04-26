@@ -9,7 +9,7 @@ export default function Patio() {
       <div className="banner">
         PATIO - Talk shit.
       </div>
-      <a target="_blank" href="https://www.google.com">
+      <a target="_blank" href="https://meet.jit.si/ProjectAkashPatio">
         <div className="action-btn">Enter</div>
       </a>
     </div>

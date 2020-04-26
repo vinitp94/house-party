@@ -9,7 +9,7 @@ export default function GameRoom() {
       <div className="banner">
         GAME ROOM
       </div>
-      <a target="_blank" href="https://www.google.com">
+      <a target="_blank" href="https://meet.jit.si/ProjectAkashGameRoom">
         <div className="action-btn">Enter</div>
       </a>
     </div>

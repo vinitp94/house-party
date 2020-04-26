@@ -9,7 +9,7 @@ export default function Bathroom() {
       <div className="banner">
         BATHROOM - Write him a message on the wall below!
       </div>
-      <a target="_blank" href="https://www.google.com">
+      <a target="_blank" href="https://meet.jit.si/ProjectAkashBathroom">
         <div className="action-btn">Enter</div>
       </a>
       <div className="iframe-container">

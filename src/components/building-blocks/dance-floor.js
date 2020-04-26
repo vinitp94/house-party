@@ -9,7 +9,7 @@ export default function DanceFloor() {
       <div className="banner">
         DANCE FLOOR - Add some bangers to the playlist!
       </div>
-      <a target="_blank" href="https://www.google.com">
+      <a target="_blank" href="https://meet.jit.si/ProjectAkashDanceFloor">
         <div className="action-btn">Enter</div>
       </a>
       <a target="_blank" href="https://open.spotify.com/playlist/5LFWI8SdtzlE9JDCWLbsDw?si=dihRkHznRg-ipiZC8UHB9A">

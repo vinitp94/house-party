@@ -22,13 +22,17 @@
   }
 
   .house-container {
-    padding: 0 200px;
+    margin: auto;
     position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    width: 60%;
 
-    > img { width: 100%; }
+    > img {
+      border: 1px solid $accent;
+      width: 100%;
+    }
   }
 
   .header-carousel {

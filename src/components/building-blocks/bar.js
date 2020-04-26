@@ -9,7 +9,7 @@ export default function Bar() {
       <div className="banner">
         BAR - Blow your stimulus check here.
       </div>
-      <a target="_blank" href="https://www.google.com">
+      <a target="_blank" href="https://meet.jit.si/ProjectAkashBar">
         <div className="action-btn">Enter</div>
       </a>
       <div className="iframe-container">

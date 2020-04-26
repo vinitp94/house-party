@@ -11,17 +11,17 @@ class Header extends React.Component {
         $('.' + item).removeClass('selected');
       });
 
-      if (scrollTop < 1000) {
+      if (scrollTop < 1400) {
         $('.welcome').addClass('selected');
-      } else if (scrollTop < 1600) {
+      } else if (scrollTop < 2000) {
         $('.akash-room').addClass('selected');
-      } else if (scrollTop < 2200) {
+      } else if (scrollTop < 2600) {
         $('.patio').addClass('selected');
-      } else if (scrollTop < 2800) {
+      } else if (scrollTop < 3200) {
         $('.bathroom').addClass('selected');
-      } else if (scrollTop < 3400) {
+      } else if (scrollTop < 3800) {
         $('.game-room').addClass('selected');
-      } else if (scrollTop < 4000) {
+      } else if (scrollTop < 4400) {
         $('.bar').addClass('selected');
       } else {
         $('.dance-floor').addClass('selected');
