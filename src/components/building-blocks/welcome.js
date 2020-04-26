@@ -3,13 +3,16 @@ import Slider from "react-slick";
 
 export default function Welcome() {
   const settings = {
-    arrows: false,
+    arrows: true,
     infinite: true,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     autoplay: true,
     autoplaySpeed: 2000,
-    pauseOnHover: true
+    pauseOnHover: true,
+    swipeToSlide: true,
+    prevArrow: <button type="button" class="slick-prev">{'<'}</button>,
+    nextArrow: <button type="button" class="slick-next">{'>'}</button>
   };
 
   const vids = [6, 7, 8, 10, 11, 12, 14, 20, 21, 33, 39, 56, 67, 76, 80];
